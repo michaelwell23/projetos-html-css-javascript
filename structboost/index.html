@@ -23,8 +23,11 @@
     <header>
       <div class="container">
         <a href="/">
-          <img src="/images/logo.svg" alt="Logo structbust" />
+          <img src="/images/logo.svg" class="logo" alt="Logo structbust" />
         </a>
+        <button class="btn-mobile">
+          <img src="/images/icon-hamburger.svg" alt="" />
+        </button>
         <nav>
           <ul>
             <li><a href="">Inicio</a></li>
@@ -35,8 +38,19 @@
         </nav>
       </div>
     </header>
+    <div class="mobile-menu">
+      <button class="close-btn">&times;</button>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#digital">Diferenciais</a></li>
+          <li><a href="#galery">Galeria</a></li>
+        </ul>
+        <button class="btn-primary">Entrar em contato</button>
+      </nav>
+    </div>
 
-    <section class="s-hero">
+    <section class="s-hero" id="home">
       <div class="container">
         <div class="text">
           <h1>Front-end descomplicado e direto ao ponto!</h1>
@@ -53,7 +67,7 @@
       <img src="/images/ilustra-hero.svg" class="ilustration" />
     </section>
 
-    <section class="s-digital">
+    <section class="s-digital" id="digital">
       <div class="container">
         <h3>Tranformando Ideias em Realidade digital!</h3>
         <ul>
@@ -106,7 +120,7 @@
       </div>
     </section>
 
-    <section class="s-art-front">
+    <section class="s-art-front" id="galery">
       <div class="container">
         <div class="title-text">
           <div class="left">
@@ -211,5 +225,75 @@
         </button>
       </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <div class="main-area">
+          <div class="left">
+            <img src="/images/logo-white.svg" alt="" />
+            <p>
+              Aprenda a desenvolver interfaces modernas e de alta qualidade com
+              quem está na área atuando com projetos altamente renomados.
+            </p>
+          </div>
+          <div class="right">
+            <div class="item-nav">
+              <h6>Lista de páginas</h6>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Diferenciais</a></li>
+                <li><a href="">Galeria</a></li>
+              </ul>
+            </div>
+
+            <div class="item-nav">
+              <h6>Soluções</h6>
+              <ul>
+                <li><a href="#">Onde começo?</a></li>
+                <li><a href="#">A carreira</a></li>
+                <li><a href="#">Indo Além</a></li>
+              </ul>
+            </div>
+
+            <div class="item-nav">
+              <h6>Contato</h6>
+              <ul>
+                <li><a href="#">E-mail</a></li>
+                <li><a href="#">Lista de espera</a></li>
+              </ul>
+            </div>
+
+            <div class="item-nav">
+              <h6>Rede Sociais</h6>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="/images/instagram.svg" alt="logo instagram" />
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/images/linkedin.svg" alt="logo linkedin" />
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/images/youtube.svg" alt="logo youtube" />
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="copy">
+          2024 © Todos os direito reservados. <strong>CodeBoost</strong>
+        </p>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
   </body>
 </html>

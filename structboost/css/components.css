@@ -99,27 +99,3 @@
   font-size: 1.3rem;
   color: var(--gray-600);
 }
-
-.s-newsletter {
-  padding: 8.9rem 0;
-  background-color: var(--pink-10);
-}
-
-.s-newsletter .container {
-  text-align: center;
-}
-
-.s-newsletter h2 {
-  max-width: 64.6rem;
-  margin: 0 auto;
-  margin-bottom: 1.6px;
-
-  font-weight: 600;
-  letter-spacing: -1.44px;
-}
-
-.s-newsletter p {
-  max-width: 68.7rem;
-  margin: 0 auto;
-  margin-bottom: 2.4rem;
-}
