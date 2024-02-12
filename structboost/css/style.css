@@ -48,6 +48,10 @@ header nav ul li a:hover {
   opacity: 0.7;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 /* SECTION HERO */
 .s-hero {
   position: relative;
@@ -60,7 +64,6 @@ header nav ul li a:hover {
 
   padding-top: 11.3rem;
   overflow: hidden;
-  display: none;
 }
 
 .s-hero::after {
@@ -128,11 +131,14 @@ header nav ul li a:hover {
   padding: 0 1.5rem;
 }
 
+.s-hero .ilustra-mobile {
+  display: none;
+}
+
 /* SECTION DIGITAL */
 
 .s-digital {
   padding-top: 12.8rem;
-  display: none;
 }
 
 .s-digital h3 {
@@ -297,9 +303,33 @@ footer .copy strong {
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
+  .s-digital {
+    padding-top: 6.8rem;
+  }
+
+  .s-digital ul {
+    gap: 3.2rem;
+    padding-bottom: 6.8rem;
+  }
+
+  .s-digital .info h6 {
+    font-size: 2rem;
+  }
+
+  .s-digital .info p {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 991px) {
+  .s-hero::after {
+    height: 13rem;
+  }
+
+  .s-digital ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -360,6 +390,32 @@ footer .copy strong {
     cursor: pointer;
     padding: 0;
   }
+
+  .s-hero {
+    padding-top: 6rem;
+  }
+
+  .s-hero .text h1 {
+    max-width: 490px;
+    margin: 0 auto;
+  }
+
+  .s-hero .text h1::before {
+    left: 0;
+    bottom: -4px;
+    background-size: 100%;
+  }
+
+  .s-hero .text p {
+    max-width: 41.6rem;
+  }
+
+  .s-hero .text .arrow {
+    bottom: 3.7rem;
+    left: 2rem;
+
+    max-width: 60px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -369,5 +425,51 @@ footer .copy strong {
 
   header .logo {
     max-width: 16rem;
+  }
+
+  .s-hero {
+    padding-top: 8.8rem;
+  }
+
+  .s-hero .text h1 {
+    font-size: 4rem;
+  }
+
+  .s-hero .text h1::before {
+    bottom: -6px;
+  }
+
+  .s-hero .text p {
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .s-hero .text .arrow {
+    display: none;
+  }
+
+  .s-hero .ilustra {
+    display: none;
+  }
+
+  .s-hero .ilustra-mobile {
+    display: block;
+  }
+
+  .s-hero::after {
+    height: 22rem;
+  }
+
+  .s-digital {
+    padding-top: 8rem;
+  }
+  .s-digital ul {
+    padding-bottom: 8rem;
+    gap: 6.4rem;
+  }
+
+  .s-digital h3 {
+    font-size: 2.8rem;
   }
 }
