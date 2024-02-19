@@ -120,4 +120,23 @@
     font-size: 1.8rem;
     max-width: 31.9rem;
   }
+
+  .card-post {
+    padding: 1.6rem;
+  }
+
+  .card-post .img {
+    margin-bottom: 5.4rem;
+  }
+
+  .card-post .text h6 {
+    font-size: 1.8rem;
+  }
+  .card-post .text p {
+    font-size: 1.4rem;
+  }
+
+  .s-art-front .all {
+    gap: 3.2rem;
+  }
 }

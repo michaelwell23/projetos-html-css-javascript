@@ -11,6 +11,8 @@ CodeBoost é uma plataforma de apresentação de um programação de aprendizado
 Para saber mais, visite nosso site [aqui](https://codeboost.com.br/).
 
 <div style="text-align: center;">
-    <img src="./images/desktop-project.png" alt="Imagem do Projeto (Desktop)" width="400"/>
-    <img src="responsive_image.png" alt="Imagem do Projeto (Responsiva)" width="400"/>
+    <h3>Desktop</h3>
+    <img src="./images/pageDesktop.png" alt="Imagem do Projeto (Desktop)" width="500"/>
+    <h3>Responsividade</h3>
+    <img src="./images/pageMobile.png" alt="Imagem do Projeto (Responsiva)" />
 </div>

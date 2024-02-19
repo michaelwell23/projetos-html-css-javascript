@@ -161,7 +161,6 @@ header nav ul li a:hover {
 
 .s-art-front {
   padding: 12.8rem 0;
-  display: none;
 }
 
 .s-art-front .title-text {
@@ -205,11 +204,9 @@ header nav ul li a:hover {
 }
 
 /* SECTION-NEWSLETTER */
-
 .s-newsletter {
   padding: 8.9rem 0;
   background-color: var(--pink-10);
-  display: none;
 }
 
 .s-newsletter .container {
@@ -301,8 +298,8 @@ footer .copy strong {
 }
 
 /* MEDIA QUERIES */
-
 @media (max-width: 1200px) {
+  /* SECTION DIGITAL */
   .s-digital {
     padding-top: 6.8rem;
   }
@@ -319,20 +316,63 @@ footer .copy strong {
   .s-digital .info p {
     font-size: 1.6rem;
   }
+
+  /* SECTION ART-FRONT */
+  .s-art-front .all {
+    gap: 1.6rem;
+  }
+  .s-art-front .all .card-post:first-child,
+  .s-art-front .all .card-post:nth-child(2) {
+    grid-column: span 3;
+  }
 }
 
 @media (max-width: 991px) {
+  /* SECTION HERO */
   .s-hero::after {
     height: 13rem;
   }
 
+  /* SECTION DIGITAL */
   .s-digital ul {
     flex-direction: column;
     align-items: center;
   }
+
+  /* SECTION ART-FRONT */
+  .s-art-front .title-text {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .s-art-front .title-text .left {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .s-art-front .title-text .left p {
+    max-width: 100%;
+    margin-top: 8px;
+  }
+
+  .s-art-front .title-text .right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .s-art-front .all {
+    grid-template-columns: 1fr;
+  }
+
+  .s-art-front .all .card-post:first-child,
+  .s-art-front .all .card-post:nth-child(2) {
+    grid-column: initial;
+  }
 }
 
 @media (max-width: 768px) {
+  /* SECTION HEADER E HEADER MOBILE */
   header nav {
     display: none;
   }
@@ -391,6 +431,7 @@ footer .copy strong {
     padding: 0;
   }
 
+  /* SECTION HERO */
   .s-hero {
     padding-top: 6rem;
   }
@@ -427,6 +468,7 @@ footer .copy strong {
     max-width: 16rem;
   }
 
+  /* SECTION HERO */
   .s-hero {
     padding-top: 8.8rem;
   }
@@ -461,6 +503,7 @@ footer .copy strong {
     height: 22rem;
   }
 
+  /* SECTION DIGITAL */
   .s-digital {
     padding-top: 8rem;
   }
@@ -471,5 +514,29 @@ footer .copy strong {
 
   .s-digital h3 {
     font-size: 2.8rem;
+  }
+
+  /* SECTION ART-FRON */
+  .s-art-front {
+    padding: 8rem 0;
+  }
+
+  .s-art-front .title-text h3 {
+    font-size: 2.8rem;
+    max-width: 22.7rem;
+    margin: 0 auto;
+  }
+
+  .s-art-front .title-text .left p {
+    margin-top: 1.6rem;
+  }
+
+  .s-art-front .title-text p {
+    font-size: 1.6rem;
+  }
+
+  /* SECTION  NEWLETTER*/
+  .s-newsletter h2 {
+    font-size: 4rem;
   }
 }
