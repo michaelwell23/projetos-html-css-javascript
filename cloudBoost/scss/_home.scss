@@ -38,12 +38,88 @@
         margin: 4.8rem 0;
       }
     }
+
+    .img-mobile {
+      display: none;
+    }
+  }
+
+  @include responsive('laptop') {
+    padding-top: 5rem;
+
+    .hero-content {
+      padding-bottom: 5rem;
+
+      .left {
+        max-width: 55rem;
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      & > img {
+        max-width: 53rem;
+      }
+    }
+  }
+
+  @include responsive('tablet') {
+    .hero-content {
+      flex-direction: column;
+      gap: 4rem;
+
+      .left {
+        text-align: center;
+
+        p {
+          margin: 0 auto;
+          margin-bottom: 3rem;
+        }
+
+        ul {
+          margin: 4rem auto;
+        }
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    padding-top: 7.2rem;
+
+    .hero-content {
+      .left {
+        h1 {
+          font-size: 4rem;
+
+          span {
+            display: block;
+          }
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+      & > img {
+        max-width: 100%;
+        display: none;
+
+        &.img-mobile {
+          display: block;
+        }
+      }
+    }
   }
 }
 
 .s-resources {
   padding-top: 11.1rem;
-
+  display: none;
   .top {
     @include flexCenterJustify;
     margin-bottom: 8rem;
@@ -71,6 +147,7 @@
 .s-markenting {
   padding-top: 9.6rem;
   padding-bottom: 12.6rem;
+  display: none;
 
   .box {
     width: 100%;
@@ -108,75 +185,77 @@
 .footer {
   background-color: $gray-800;
   padding: 70px 0;
+  display: none;
 }
 
 .footer .row {
   display: flex;
   flex-wrap: wrap;
-}
 
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
-  h4 {
-    font-size: 18px;
-    color: $gray-100;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-      background-color: $purple-20;
-      height: 2px;
-      box-sizing: border-box;
-      width: 50px;
-    }
-  }
-
-  ul {
-    li {
-      &:not(:last-child) {
-        margin-bottom: 10px;
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+    h4 {
+      font-size: 18px;
+      color: $gray-100;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: $purple-20;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
       }
-      a {
-        font-size: 1.8rem;
-        text-transform: capitalize;
-        color: $gray-100;
-        text-decoration: none;
-        font-weight: 300;
-        color: $gray-400;
-        display: block;
-        transition: all 0.3s ease;
-        &:hover {
+    }
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        a {
+          font-size: 1.8rem;
+          text-transform: capitalize;
           color: $gray-100;
-          padding-left: 8px;
+          text-decoration: none;
+          font-weight: 300;
+          color: $gray-400;
+          display: block;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $gray-100;
+            padding-left: 8px;
+          }
+        }
+      }
+    }
+    .social-links {
+      a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: $background-color_3;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: $gray-100;
+        transition: all 0.5s ease;
+        &:hover {
+          color: $gray-800;
+          background-color: $gray-100;
         }
       }
     }
   }
-  .social-links {
-    a {
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-      background-color: $background-color_3;
-      margin: 0 10px 10px 0;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 50%;
-      color: $color_1;
-      transition: all 0.5s ease;
-      &:hover {
-        color: $gray-800;
-        background-color: $gray-100;
-      }
-    }
-  }
 }
+
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;

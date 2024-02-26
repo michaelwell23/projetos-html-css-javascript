@@ -42,6 +42,28 @@
       color: $gray-300;
     }
   }
+
+  @include responsive('tablet') {
+    .form-email {
+      margin: 0 auto;
+
+      input {
+        text-align: left;
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    justify-content: space-between;
+    input {
+      max-width: 12rem;
+    }
+
+    .btn-primary {
+      padding: 1.2rem 2rem;
+      font-size: 1.6rem;
+    }
+  }
 }
 
 .card-resources {
@@ -96,5 +118,9 @@
         color: $gray-600;
       }
     }
+  }
+
+  @include responsive('tablet') {
+    justify-content: center;
   }
 }
