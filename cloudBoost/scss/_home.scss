@@ -119,7 +119,6 @@
 
 .s-resources {
   padding-top: 11.1rem;
-  display: none;
   .top {
     @include flexCenterJustify;
     margin-bottom: 8rem;
@@ -142,12 +141,51 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
     padding-bottom: 11.1rem;
   }
+
+  @include responsive('laptop') {
+    padding-top: 5rem;
+    .all {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  @include responsive('tablet') {
+    .top {
+      flex-direction: column;
+      gap: 3rem;
+      margin-bottom: 5rem;
+
+      h3 {
+        text-align: center;
+      }
+    }
+    .all {
+      padding-bottom: 5rem;
+    }
+  }
+
+  @include responsive('mobile') {
+    padding-top: 4rem;
+
+    .top {
+      margin-bottom: 3rem;
+
+      h3 {
+        font-size: 2.8rem;
+      }
+    }
+    .all {
+      grid-template-columns: 1fr;
+      gap: 6.4rem;
+    }
+  }
 }
 
 .s-markenting {
   padding-top: 9.6rem;
   padding-bottom: 12.6rem;
-  display: none;
 
   .box {
     width: 100%;
@@ -157,6 +195,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 1rem;
 
     h2 {
       text-align: center;
@@ -180,12 +219,36 @@
       text-align: center;
     }
   }
+
+  @include responsive('tablet') {
+    .box {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @include responsive('mobile') {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .box {
+      height: auto;
+      background-size: cover;
+      padding: 5rem 1.5rem;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
 }
 
 .footer {
   background-color: $gray-800;
   padding: 70px 0;
-  display: none;
 }
 
 .footer .row {
@@ -202,6 +265,7 @@
       margin-bottom: 35px;
       font-weight: 500;
       position: relative;
+
       &::before {
         content: '';
         position: absolute;
@@ -254,16 +318,25 @@
       }
     }
   }
-}
 
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
+  @include responsive('tablet') {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
   }
-}
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
+
+  @include responsive('mobile') {
+    text-align: center;
+
+    .footer-col {
+      width: 100%;
+
+      h4 {
+        &::before {
+          left: 13.3rem;
+        }
+      }
+    }
   }
 }
