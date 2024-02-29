@@ -16,7 +16,9 @@
   text-transform: uppercase;
 
   transition: background-color 0.3s ease;
-  .btn-primary:hover {
+
+  &:hover {
+    background-color: #f7e81d;
   }
 }
 
@@ -37,9 +39,11 @@
   letter-spacing: 0.32px;
   text-transform: uppercase;
 
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 
-  .btn-secondary:hover {
+  &:hover {
+    color: $color-yellow;
+    border: 1px solid $color-yellow;
   }
 }
 
@@ -99,7 +103,7 @@
   max-width: 26.5rem;
 
   .icon {
-    width: 4.8rem;
+    width: 2.2rem;
 
     @include flexTotalCenter;
 
@@ -110,20 +114,6 @@
   }
 
   .text {
-    &::before {
-      content: '';
-      position: fixed;
-      top: 5.9rem;
-      left: 14.4rem;
-
-      margin-bottom: 0.7rem;
-      display: block;
-      width: 1.5rem;
-      height: 3px;
-      background: $color-yellow;
-      margin: 0 auto;
-    }
-
     h6 {
       color: $color-black;
       font-family: 'Montserrat';

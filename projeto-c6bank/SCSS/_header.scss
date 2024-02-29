@@ -5,7 +5,7 @@ header {
 
   margin-top: 1.6rem;
 
-  .content-header {
+  .content {
     border-radius: 100px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: rgba(255, 255, 255, 0.04);
@@ -14,28 +14,33 @@ header {
     @include flexCenterJustify;
     padding: 0.8rem 0.8rem 0.8rem 2.1rem;
 
-    .left-content {
+    ul {
       @include flex-center;
-      gap: 1.6rem;
+      gap: 6.6rem;
 
-      a {
-        @include flex-center;
-        gap: 0.8rem;
+      li {
+        position: relative;
 
-        span {
+        a {
+          color: $color-gray;
+          font-family: 'Inter';
           font-size: 1.6rem;
-          line-height: 150%;
-          transition: color 0.3s ease;
+          font-weight: 500;
         }
-        &:hover {
-          span {
-          }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 10px);
+          transform: translateY(-50%);
+          width: 10px;
+          height: 10px;
+          background-image: url('../img/h-trianguler.svg');
+          background-repeat: no-repeat;
+          background-position: center;
         }
       }
-    }
-
-    .btn-mobile {
-      display: none;
     }
   }
 }

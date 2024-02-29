@@ -1,0 +1,191 @@
+.home {
+  height: 59rem;
+
+  padding-top: 14.3rem;
+  max-width: 195rem;
+  background: url(../img/home-bg.png) no-repeat center center;
+  background-size: cover;
+
+  .text-content {
+    .top-text {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      padding-bottom: 3.2rem;
+
+      strong {
+        width: 54px;
+        height: 26px;
+        flex-shrink: 0;
+        border-radius: 120px;
+        background: #006d8f;
+
+        padding: 0.4rem 1.1rem;
+        text-align: center;
+
+        color: $gray-100;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .subtitle {
+        color: $gray-100;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+
+    h1 {
+      max-width: 67rem;
+
+      color: $gray-100;
+
+      font-family: 'Montserrat';
+      font-weight: 700;
+      line-height: 130%;
+
+      padding-bottom: 2.4rem;
+    }
+
+    .title-text {
+      max-width: 36.5rem;
+      color: $gray-100;
+
+      font-weight: 500;
+      line-height: 150%;
+
+      opacity: 0.7;
+
+      padding-bottom: 4rem;
+    }
+  }
+}
+
+.resources {
+  padding-top: 9.6rem;
+  padding-bottom: 28rem;
+
+  .content {
+    @include flexCenterJustify;
+    position: relative;
+
+    .left-content {
+      width: 100%;
+      max-width: 65rem;
+      margin-top: 1rem;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-top: 10rem;
+
+      align-items: center;
+
+      h5 {
+        max-width: 24.3rem;
+
+        color: $color-black;
+        font-weight: 400;
+
+        padding-bottom: 0.8rem;
+      }
+
+      p {
+        max-width: 25.9rem;
+
+        color: $color-gray;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+
+    .right-content {
+      position: absolute;
+      right: 0;
+      bottom: -17rem;
+    }
+  }
+}
+
+.markenting {
+  padding-top: 10.9rem;
+  padding-bottom: 13.3rem;
+  background-color: $gray-200;
+
+  .title {
+    @include flexCenterJustify;
+    padding-bottom: 8.7rem;
+  }
+
+  .card-business {
+    max-width: 121.6rem;
+
+    border-radius: 12px;
+    background: linear-gradient(99deg, #020302 7.61%, #242424 96.26%);
+
+    padding: 9.7rem 0 10.6rem 10.3rem;
+
+    @include flexCenterJustify;
+
+    h4 {
+      max-width: 21rem;
+
+      color: $gray-100;
+      line-height: 130%;
+      letter-spacing: -0.72px;
+      padding-bottom: 1.6rem;
+    }
+
+    p {
+      max-width: 30.1rem;
+      color: $gray-100;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 150%;
+
+      opacity: 0.7;
+    }
+
+    .card-text {
+      .group {
+        padding-top: 5rem;
+        @include flex-center;
+
+        img {
+          padding-right: 1.6rem;
+        }
+      }
+    }
+
+    .left-card {
+      position: relative;
+
+      .m-cell {
+        position: absolute;
+        top: -108.9px;
+        right: 79px;
+
+        max-width: 47.9rem;
+      }
+      .m-card {
+        position: absolute;
+        bottom: -11rem;
+        right: 15rem;
+
+        max-width: 44.2rem;
+
+        z-index: 999;
+      }
+
+      .m-logo {
+        position: absolute;
+        bottom: -15.8rem;
+        right: 4.3rem;
+
+        max-width: 13.2rem;
+      }
+    }
+  }
+}

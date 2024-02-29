@@ -4,27 +4,45 @@ h3,
 h4,
 h5 {
   color: $color-black;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 120%;
   font-weight: 700;
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 3.8rem;
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 2.8rem;
 }
 
 h4 {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 h5 {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
+}
+
+.title,
+.title-text {
+  h2 {
+    color: $color-black;
+
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -1.2px;
+  }
+
+  h3 {
+    color: $color-gray;
+
+    font-weight: 400;
+    line-height: 130%;
+  }
 }
