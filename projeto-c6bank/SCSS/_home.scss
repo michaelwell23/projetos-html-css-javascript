@@ -146,16 +146,52 @@
     }
   }
 
+  @include responsive('laptop') {
+    .content {
+      .right-content {
+        width: 40rem;
+
+        right: -3rem;
+        bottom: -6rem;
+      }
+    }
+  }
+
   @include responsive('tablet') {
+    padding-bottom: 10rem;
+
+    .title {
+      text-align: center;
+    }
+
     .content {
       .right-content {
         display: none;
+      }
+
+      .left-content {
+        width: 100%;
+        margin: 0 auto;
       }
     }
   }
 
   @include responsive('mobile') {
+    .title {
+      text-align: center;
+
+      h2 {
+        font-size: 3.2rem;
+      }
+
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
+
     .content {
+      padding: 0 7.8rem;
+
       .right-content {
         display: none;
       }
@@ -163,6 +199,7 @@
       .left-content {
         grid-template-columns: 1fr;
         justify-content: flex-start;
+        gap: 6.4rem;
       }
     }
   }
@@ -172,8 +209,6 @@
   padding-top: 10.9rem;
   padding-bottom: 13.3rem;
   background-color: $gray-200;
-
-  display: none;
 
   .title {
     @include flexCenterJustify;
@@ -246,6 +281,98 @@
         right: 4.3rem;
 
         max-width: 13.2rem;
+      }
+    }
+  }
+
+  @include responsive('laptop') {
+  }
+
+  @include responsive('tablet') {
+    max-height: 63.2rem;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .card-business {
+      padding-right: 9.3rem;
+
+      .left-card {
+        .m-card {
+          width: 32rem;
+
+          bottom: -14rem;
+          right: 0;
+        }
+
+        .m-cell {
+          width: 320px;
+          top: -0.9rem;
+          right: -2px;
+        }
+
+        .m-logo {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    .card-business {
+      flex-direction: column;
+      padding: 6.4rem 0 0;
+
+      .card-text {
+        margin: 0 auto;
+
+        h4 {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        p {
+          max-width: 30.7rem;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .group {
+          padding-bottom: 11.5rem;
+          justify-content: center;
+
+          img {
+            margin: 0;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .left-card {
+        margin: 0 auto;
+
+        .m-card {
+          position: absolute;
+
+          width: 34rem;
+          bottom: 7rem;
+          right: 5px;
+        }
+
+        .m-cell {
+          position: relative;
+        }
+
+        .m-logo {
+          display: none;
+        }
       }
     }
   }
