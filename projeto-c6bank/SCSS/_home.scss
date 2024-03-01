@@ -32,6 +32,7 @@
       .subtitle {
         color: $gray-100;
         font-weight: 500;
+        font-size: 1.5rem;
         line-height: 150%;
       }
     }
@@ -60,6 +61,43 @@
       padding-bottom: 4rem;
     }
   }
+
+  @include responsive('tablet') {
+    background: #1d1b15;
+
+    .text-content {
+      .top-text {
+        strong {
+          margin-right: 2rem;
+        }
+        .subtitle {
+          font-size: 1.6rem;
+        }
+      }
+      .title-text {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    padding-top: 7.2rem;
+    text-align: center;
+
+    .text-content {
+      .top-text {
+        strong {
+          display: none;
+        }
+        .subtitle {
+          font-size: 1.6rem;
+        }
+      }
+      .title-text {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 .resources {
@@ -77,7 +115,7 @@
 
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 2.2rem;
       padding-top: 10rem;
 
       align-items: center;
@@ -107,12 +145,35 @@
       bottom: -17rem;
     }
   }
+
+  @include responsive('tablet') {
+    .content {
+      .right-content {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    .content {
+      .right-content {
+        display: none;
+      }
+
+      .left-content {
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+      }
+    }
+  }
 }
 
 .markenting {
   padding-top: 10.9rem;
   padding-bottom: 13.3rem;
   background-color: $gray-200;
+
+  display: none;
 
   .title {
     @include flexCenterJustify;

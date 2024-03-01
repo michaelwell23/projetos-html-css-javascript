@@ -12,7 +12,7 @@ header {
     backdrop-filter: blur(3.5px);
 
     @include flexCenterJustify;
-    padding: 0.8rem 0.8rem 0.8rem 2.1rem;
+    padding: 0.8rem 0.8rem 0.8rem 0;
 
     ul {
       @include flex-center;
@@ -40,6 +40,21 @@ header {
           background-repeat: no-repeat;
           background-position: center;
         }
+      }
+    }
+  }
+  @include responsive('tablet') {
+    .content {
+      ul {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    .content {
+      ul {
+        display: none;
       }
     }
   }
