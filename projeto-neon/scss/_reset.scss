@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-
   list-style: none;
   text-decoration: none;
   outline: none;
   border: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 img {
@@ -16,12 +16,19 @@ img {
 
 html {
   font-size: 62.5%;
-  font-family: 'Inter', sans-serif;
+  @include responsive(1300px) {
+    font-size: 58%;
+  }
+  @include responsive(1200px) {
+    font-size: 55%;
+  }
+  @include responsive(991px) {
+    font-size: 62.5%;
+  }
 }
 
 html,
 body {
-  height: 100%;
   overflow-x: hidden;
 }
 
