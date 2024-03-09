@@ -9,6 +9,12 @@ Este repositório contém uma coleção de projetos desenvolvidos utilizando HTM
 | 1      | distortion-slider  | [Projeto 1](/distortion-slider/)        |
 | 2      | Helloween          | [Projeto 2](/helloween-landing-page/)   |
 | 3      | Microsoft Homepage | [Projeto 3](/Microsoft-homepage-clone/) |
-| 4      | Structboost        | [Projeto 4](/structboost/)              |
+| 4      | StructBoost        | [Projeto 4](/structboost/)              |
+| 5      | Cloud Boost        | [Projeto 5](/cloudBoost/)               |
+| 6      | Banco C6           | [Projeto 6](/projeto-c6bank/)           |
+| 7      | Neon Bank          | [Projeto 7](/projeto-neon/)             |
+| 8      | Projeto Blizzard   | [Projeto 8](/projeto-blizzard/)         |
+| 9      |                    |                                         |
+| 10     |                    |                                         |
 
 Sinta-se à vontade para explorar e experimentar estes projetos. Se tiver alguma sugestão ou dúvida, não hesite em entrar em contato.
