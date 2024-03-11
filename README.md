@@ -14,7 +14,7 @@ Este repositório contém uma coleção de projetos desenvolvidos utilizando HTM
 | 6      | Banco C6           | [Projeto 6](/projeto-c6bank/)           |
 | 7      | Neon Bank          | [Projeto 7](/projeto-neon/)             |
 | 8      | Projeto Blizzard   | [Projeto 8](/projeto-blizzard/)         |
-| 9      |                    |                                         |
+| 9      | Projeto Pokedéx    | [Projeto 9](/projeto-pokedex/)          |
 | 10     |                    |                                         |
 
 Sinta-se à vontade para explorar e experimentar estes projetos. Se tiver alguma sugestão ou dúvida, não hesite em entrar em contato.
