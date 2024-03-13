@@ -31,7 +31,7 @@
 html {
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
-  background: #001010;
+  background: #0f0f0f;
 }
 
 img {
@@ -55,6 +55,13 @@ button[disabled] {
 
 ul {
   list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 124.6rem;
+  margin: 0 auto;
+  padding: 0px 1.5rem;
 }
 
 .tag {
@@ -933,6 +940,31 @@ h2 {
 h3 {
   font-weight: 600;
   font-size: 1.8rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 footer {
