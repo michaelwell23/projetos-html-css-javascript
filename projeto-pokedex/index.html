@@ -126,6 +126,95 @@
       </div>
     </section>
 
+    <section class="s-all-info-pokemons">
+      <div class="container">
+        <div class="top">
+          <h2>Select your Pokémon</h2>
+          <div class="search">
+            <input
+              type="text"
+              placeholder="Search name or code"
+              id="js-input-search"
+            />
+            <button type="button" id="js-btn-search">
+              <img src="/assets/icon-search.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="area-all">
+          <div class="left-container">
+            <ul id="js-type-area">
+              <li>
+                <button class="type-filter active all" code-type="">
+                  <div class="icon">
+                    <img src="/assets/icon-all.svg" alt="" />
+                  </div>
+                  <span>All</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="right-container">
+            <div class="top-container">
+              <div>
+                <img src="/assets/icon-pokeball.svg" alt="" />
+                <span
+                  ><strong id="js-count-pokemons"> - </strong> Pokémons</span
+                >
+              </div>
+            </div>
+            <div class="select-custom">
+              <button class="item-selected js-open-select-custom">
+                <span>Show:</span>
+                <strong>All</strong>
+              </button>
+              <ul class="dropdown-select">
+                <li>
+                  <button class="type-filter active" code-type="">
+                    <div class="icon">
+                      <img src="/assets/icon-all.svg" alt="" />
+                    </div>
+                    <span>All</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="all" id="js-list-pokemons">
+              <button class="card-pokemon js-open-details-pokemon grass">
+                <div class="image">
+                  <img src="/assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info">
+                  <div class="text">
+                    <span>#001</span>
+                    <h3>Bulbasaur</h3>
+                  </div>
+                  <div class="icon">
+                    <img src="/assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+            </div>
+            <button class="btn-load-more" id="js-btn-load-more">
+              Load more Pokémons
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="text">
+          <h3>Pokemon Api</h3>
+          <p>Consumindo e exibindo dados de uma API</p>
+        </div>
+        <a href="" target="_blank">
+          <img src="/assets/logo.svg" alt="" />
+        </a>
+      </div>
+    </footer>
+
     <div class="modal" type-pokemon-modal="grass" id="js-modal-details">
       <div class="overlay"></div>
       <div class="box">
