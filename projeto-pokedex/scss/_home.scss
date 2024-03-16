@@ -9,7 +9,7 @@
     .swiper-slide {
       &.blue {
         .main-area {
-          background-image: url('../assets/bg-blue.svg');
+          background-image: url("../img/bg-blue.svg");
           .text {
             .image {
               .pokeball {
@@ -29,19 +29,19 @@
         }
       }
       &:after {
-        content: '';
+        content: "";
         width: 100%;
         height: 28.8rem;
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: #eff3f6;
+        background-color: #EFF3F6;
         z-index: 0;
         pointer-events: none;
       }
       .main-area {
         position: relative;
-        background: url('../assets/bg-red.svg') no-repeat center center;
+        background: url("../img/bg-red.svg") no-repeat center center;
         width: 100%;
         height: 70.6rem;
         background-size: cover;
@@ -64,7 +64,8 @@
             font-weight: 500;
             font-size: 1.8rem;
             line-height: 150%;
-            color: #ffffff;
+            color: #FFFFFF;
+
           }
           .image {
             position: relative;
@@ -101,7 +102,7 @@
             .icon {
               width: 40px;
               height: 40px;
-              background-color: #c90c0c;
+              background-color: #C90C0C;
               border-radius: 50%;
               @include centerTotalFlex;
               transform: rotate(90deg);
@@ -110,7 +111,7 @@
               font-weight: 500;
               font-size: 1.3rem;
               line-height: 150%;
-              color: #ffffff;
+              color: #FFFFFF;
               margin-left: 3rem;
             }
           }
@@ -128,8 +129,9 @@
         }
       }
     }
+    
   }
-  @media (max-width: 768px) {
+  @media(max-width: 768px) {
     height: 95.4rem;
     .slide-hero {
       .swiper-slide {
@@ -161,7 +163,7 @@
       }
     }
   }
-  @media (max-width: 560px) {
+  @media(max-width: 560px) {
     overflow: hidden;
     height: 104.5rem;
     .slide-hero {
@@ -220,7 +222,7 @@
     .left-container {
       width: 100%;
       max-width: 32.9rem;
-      border-right: 1px solid #eff3f6;
+      border-right: 1px solid #EFF3F6;
       padding-top: 7.1rem;
       padding-bottom: 7.5rem;
       ul {
@@ -246,7 +248,7 @@
             font-weight: 600;
             font-size: 1.8rem;
             line-height: 150%;
-            color: #4d5053;
+            color: #4D5053;
             margin-left: 6px;
           }
         }
@@ -268,23 +270,22 @@
           cursor: pointer;
           width: 100%;
           height: 5.6rem;
-          border: 1px solid #a0afba;
-          background: url('../assets/arrow-down-select.svg') no-repeat right
-            2.4rem center;
+          border: 1px solid #A0AFBA;
+          background: url("../img/arrow-down-select.svg") no-repeat right 2.4rem center;
           padding: 0 2rem;
           border-radius: 1rem;
           display: flex;
           align-items: center;
-          transition: all 0.3s;
+          transition: all .3s;
           span {
-            color: #7a7d80;
+            color: #7A7D80;
             opacity: 0.6;
             font-size: 1.4rem;
             margin-right: 4px;
           }
           strong {
             font-size: 1.4rem;
-            color: #7a7d80;
+            color: #7A7D80;
             font-weight: 600;
           }
         }
@@ -293,15 +294,15 @@
           top: 5.6rem;
           width: 100%;
           height: 22.3rem;
-          border: 1px solid #a0afba;
-          background-color: #ffffff;
+          border: 1px solid #A0AFBA;
+          background-color: #FFFFFF;
           border-top: 0;
           padding: 2.1rem;
           z-index: 2;
           overflow-y: auto;
           opacity: 0;
           pointer-events: none;
-          transition: all 0.3s;
+          transition: all .3s;
           &::-webkit-scrollbar-track {
             background-color: transparent;
           }
@@ -337,7 +338,7 @@
       }
     }
   }
-  @media (max-width: 1200px) {
+  @media(max-width: 1200px) {
     .top {
       .search {
         max-width: 32.3rem;
@@ -361,21 +362,21 @@
       }
     }
   }
-  @media (max-width: 768px) {
+  @media(max-width: 768px) {
     margin-top: -25.8rem;
     .top {
       margin-bottom: 4rem;
     }
     .area-all {
       .left-container {
-        display: none;
+        display:  none;
       }
       .right-container {
         padding-left: 0px;
       }
     }
   }
-  @media (max-width: 560px) {
+  @media(max-width: 560px) {
     margin-top: -34rem;
     padding-top: 12rem;
     padding-bottom: 4rem;

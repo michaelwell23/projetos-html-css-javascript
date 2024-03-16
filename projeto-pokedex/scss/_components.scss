@@ -1,7 +1,7 @@
 .tag {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 244px;
   max-width: 12.1rem;
   padding: 6px 4px;
@@ -10,7 +10,7 @@
       background-color: rgba(63, 104, 186, 0.15);
     }
     span {
-      color: #3f67ba;
+      color: #3F67BA;
     }
   }
   .icon {
@@ -25,12 +25,12 @@
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 150%;
-    color: #c20001;
+    color: #C20001;
   }
 }
 
 .search {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 122px;
   width: 100%;
   max-width: 40.3rem;
@@ -40,15 +40,15 @@
   justify-content: space-between;
   padding-left: 2.5rem;
   padding-right: 0.7rem;
-  input[type='text'] {
+  input[type=text] {
     border: 0;
     outline: none;
     width: 80%;
     font-size: 1.5rem;
     line-height: 150%;
-    color: #a0afba;
+    color: #A0AFBA;
     &::placeholder {
-      color: #a0afba;
+      color: #A0AFBA;
     }
   }
   button {
@@ -57,9 +57,9 @@
     background-color: rgba(158, 185, 225, 0.1);
     border-radius: 50%;
     border: 1px solid transparent;
-    transition: border-color 0.3s;
+    transition: border-color .3s;
     &:hover {
-      border-color: #3e75c3;
+      border-color:#3E75C3;
     }
     @include centerTotalFlex;
   }
@@ -70,7 +70,7 @@
   align-items: center;
   filter: grayscale(100%);
   opacity: 0.6;
-  transition: all 0.3s;
+  transition: all .3s;
   &:hover,
   &.active {
     filter: grayscale(0%);
@@ -114,7 +114,7 @@
   }
   &.electric {
     span {
-      color: #eed967;
+      color: #EED967;
     }
   }
   &.fairy {
@@ -193,7 +193,7 @@
   box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.3);
   border-radius: 12px;
   z-index: 1;
-  transition: all 0.3s;
+  transition: all .3s;
   &:hover {
     transform: scale(1.02);
     box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
@@ -335,7 +335,7 @@
       max-width: 14.2rem;
     }
     &:after {
-      content: '';
+      content: "";
       width: 16.5rem;
       height: 16.5rem;
       position: absolute;
@@ -356,7 +356,7 @@
         font-weight: 500;
         font-size: 1.3rem;
         line-height: 150%;
-        color: #7a7d80;
+        color: #7A7D80;
         margin-bottom: 6px;
       }
     }
@@ -364,7 +364,7 @@
       margin-bottom: 1rem;
     }
   }
-  @media (max-width: 1200px) {
+  @media(max-width: 1200px) {
     max-width: 100%;
   }
 }
@@ -416,7 +416,7 @@
   }
   &.poison {
     color: var(--type-poison);
-    background-color: rgba(172, 106, 202, 0.1);
+    background-color: rgba(172, 106, 202, 0.1)
   }
   &.psychic {
     color: var(--type-psychic);
@@ -461,7 +461,7 @@
   font-size: 1.4rem;
   letter-spacing: -0.01em;
   color: var(--blue-primary);
-  transition: all 0.3s;
+  transition: all .3s;
   &:hover {
     background-color: var(--blue-primary);
     color: #ffffff;
@@ -480,130 +480,130 @@
   z-index: 2022;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s;
-  &[type-pokemon-modal='fire'] {
+  transition: all .3s;
+  &[type-pokemon-modal="fire"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/fire.svg');
+        background-image: url("../img/bg-types/fire.svg");
       }
     }
   }
-  &[type-pokemon-modal='water'] {
+  &[type-pokemon-modal="water"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/water.svg');
+        background-image: url("../img/bg-types/water.svg");
       }
     }
   }
-  &[type-pokemon-modal='grass'] {
+  &[type-pokemon-modal="grass"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/grass.svg');
+        background-image: url("../img/bg-types/grass.svg");
       }
     }
   }
-  &[type-pokemon-modal='poison'] {
+  &[type-pokemon-modal="poison"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/poison.svg');
+        background-image: url("../img/bg-types/poison.svg");
       }
     }
   }
-  &[type-pokemon-modal='bug'] {
+  &[type-pokemon-modal="bug"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/bug.svg');
+        background-image: url("../img/bg-types/bug.svg");
       }
     }
   }
-  &[type-pokemon-modal='dark'] {
+  &[type-pokemon-modal="dark"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/dark.svg');
+        background-image: url("../img/bg-types/dark.svg");
       }
     }
   }
-  &[type-pokemon-modal='dragon'] {
+  &[type-pokemon-modal="dragon"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/dragon.svg');
+        background-image: url("../img/bg-types/dragon.svg");
       }
     }
   }
-  &[type-pokemon-modal='electric'] {
+  &[type-pokemon-modal="electric"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/electric.svg');
+        background-image: url("../img/bg-types/electric.svg");
       }
     }
   }
-  &[type-pokemon-modal='fairy'] {
+  &[type-pokemon-modal="fairy"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/fairy.svg');
+        background-image: url("../img/bg-types/fairy.svg");
       }
     }
   }
-  &[type-pokemon-modal='fighting'] {
+  &[type-pokemon-modal="fighting"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/fighting.svg');
+        background-image: url("../img/bg-types/fighting.svg");
       }
     }
   }
-  &[type-pokemon-modal='ground'] {
+  &[type-pokemon-modal="ground"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/ground.svg');
+        background-image: url("../img/bg-types/ground.svg");
       }
     }
   }
-  &[type-pokemon-modal='ice'] {
+  &[type-pokemon-modal="ice"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/ice.svg');
+        background-image: url("../img/bg-types/ice.svg");
       }
     }
   }
-  &[type-pokemon-modal='normal'] {
+  &[type-pokemon-modal="normal"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/normal.svg');
+        background-image: url("../img/bg-types/normal.svg");
       }
     }
   }
-  &[type-pokemon-modal='psychic'] {
+  &[type-pokemon-modal="psychic"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/psychic.svg');
+        background-image: url("../img/bg-types/psychic.svg");
       }
     }
   }
-  &[type-pokemon-modal='rock'] {
+  &[type-pokemon-modal="rock"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/rock.svg');
+        background-image: url("../img/bg-types/rock.svg");
       }
     }
   }
-  &[type-pokemon-modal='ghost'] {
+  &[type-pokemon-modal="ghost"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/ghost.svg');
+        background-image: url("../img/bg-types/ghost.svg");
       }
     }
   }
-  &[type-pokemon-modal='steel'] {
+  &[type-pokemon-modal="steel"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/steel.svg');
+        background-image: url("../img/bg-types/steel.svg");
       }
     }
   }
-  &[type-pokemon-modal='flying'] {
+  &[type-pokemon-modal="flying"] {
     .box {
       .left-container {
-        background-image: url('../assets/bg-types/flying.svg');
+        background-image: url("../img/bg-types/flying.svg");
       }
     }
   }
@@ -624,17 +624,17 @@
     background-color: #ffffff;
     z-index: 1;
     box-shadow: 0px 10px 40px rgba(13, 12, 71, 0.05);
-    border-radius: 16px;
+    border-radius: 16px;  
     display: flex;
     transform: translateY(4rem);
-    transition: transform 0.3s ease-in;
+    transition: transform .3s ease-in;
     .close {
       position: absolute;
       top: -4.4rem;
       right: 0;
       width: 3.6rem;
       height: 3.6rem;
-      background: #ffffff;
+      background: #FFFFFF;
       border-radius: 8px;
       @include centerTotalFlex();
     }
@@ -651,7 +651,7 @@
         right: 2rem;
         width: 3.4rem;
         height: 3.4rem;
-        background-color: #ffffff;
+        background-color: #FFFFFF;
         border-radius: 50%;
         @include centerTotalFlex();
       }
@@ -678,14 +678,14 @@
           font-size: 2.8rem;
           line-height: 3.4rem;
           letter-spacing: -0.01em;
-          color: #2f3133;
+          color: #2F3133;
         }
         span {
           font-family: 'Montserrat', sans-serif;
           font-size: 1.6rem;
           line-height: 2rem;
           letter-spacing: -0.01em;
-          color: #7a7d80;
+          color: #7A7D80;
           position: relative;
           top: -3px;
           margin-left: 8px;
@@ -716,7 +716,7 @@
             font-size: 1.3rem;
             line-height: 1.6rem;
             letter-spacing: -0.01em;
-            color: #7a7d80;
+            color: #7A7D80;
             margin-bottom: 0.4rem;
           }
           strong {
@@ -724,7 +724,7 @@
             font-size: 1.4rem;
             line-height: 1.7rem;
             letter-spacing: -0.01em;
-            color: #2f3133;
+            color: #2F3133;
           }
         }
       }
@@ -735,7 +735,7 @@
           font-size: 1.3rem;
           line-height: 1.6rem;
           letter-spacing: -0.01em;
-          color: #4d5053;
+          color: #4D5053;
           margin-bottom: 1.6rem;
         }
         ul {
@@ -757,7 +757,7 @@
           font-size: 1.3rem;
           line-height: 1.6rem;
           letter-spacing: -0.01em;
-          color: #4d5053;
+          color: #4D5053;
           margin-bottom: 1.6rem;
         }
         .all {
@@ -772,7 +772,7 @@
               display: block;
               font-size: 1.2rem;
               line-height: 1.5rem;
-              color: #7a7d80;
+              color: #7A7D80;
               width: 6.8rem;
             }
             .bar-status {
@@ -780,7 +780,7 @@
               width: 100%;
               max-width: 28.3rem;
               height: 3px;
-              background-color: #eff3f6;
+              background-color: #EFF3F6;
               .bar {
                 position: absolute;
                 top: 0;
@@ -788,7 +788,7 @@
                 width: 56%;
                 height: 100%;
                 z-index: 0;
-                background-color: #c20001;
+                background-color: #C20001;
               }
               .separator {
                 position: absolute;
@@ -813,7 +813,7 @@
       }
     }
   }
-  @media (max-width: 560px) {
+  @media(max-width: 560px) {
     align-items: flex-end;
     .box {
       flex-direction: column;
@@ -828,7 +828,7 @@
           width: 25px;
         }
       }
-      .left-container {
+      .left-container{
         max-width: 100%;
         height: 12.5rem;
         background-size: cover;
