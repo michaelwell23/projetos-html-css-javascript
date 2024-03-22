@@ -33,13 +33,13 @@ a {
 }
 
 section {
-  @media (max-width: 1200px) {
+  @media(max-width: 1200px) {
     padding: 60px 0px !important;
   }
-  @media (max-width: 768px) {
-    padding: 50px 0px !important;
+  @media(max-width: 768px) {
+    padding: 50px 0 !important;
   }
-  @media (max-width: 560px) {
+  @media(max-width: 560px) {
     padding: 40px 0px !important;
   }
 }
