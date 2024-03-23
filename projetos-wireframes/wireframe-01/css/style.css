@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  border-bottom: 1px solid #edeafa;
+
+  padding: 2.8rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 144rem;
+  padding: 0 11.2rem;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+ul li {
+  margin-left: 1.8rem;
+}
+
+ul li a {
+  color: #5f5c6b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info span {
+  margin-left: 1.8rem;
+
+  color: #5f5c6b;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home h1 {
+  max-width: 86.3rem;
+
+  padding-top: 4.8rem;
+
+  color: #4e4b59;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.48px;
+}
+
+.home p {
+  max-width: 82.5rem;
+  padding-top: 2.4rem;
+
+  color: #5f5c6b;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.input-button {
+  margin-top: 4rem;
+  margin-bottom: 6.4rem;
+  display: flex;
+
+  position: relative;
+}
+
+.input-button input {
+  border-radius: 120px;
+  background: #f1f0f5;
+  border: none;
+
+  width: 448px;
+  height: 41px;
+  flex-shrink: 0;
+}
+
+.input-button input::placeholder {
+  padding-left: 2.4rem;
+}
+
+.input-button button {
+  position: absolute;
+  right: 0;
+
+  display: inline-flex;
+  padding: 11px 20px;
+  align-items: center;
+
+  gap: 10px;
+
+  border-radius: 120px;
+  background: #7a7786;
+
+  color: #fff;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.home img {
+  width: 950px;
+  height: 465px;
+
+  padding-left: 4.2rem;
+
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
