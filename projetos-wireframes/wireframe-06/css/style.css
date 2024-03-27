@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 144rem;
+  padding: 0 11.2rem;
+  margin: 0 auto;
+}
+
+header {
+  height: 10.9rem;
+  background-color: #4e4b59;
+
+  padding: 3.2rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  padding-right: 5.6rem;
+}
+
+header ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+}
+
+header ul li button {
+  width: 14.7rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+
+  margin-left: 0.7rem;
+
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.15px;
+
+  background: #4e4b59;
+}
+
+.home {
+  background-color: #4e4b59;
+  height: 66.5rem;
+
+  padding-top: 7.8rem;
+}
+
+.home .container {
+  display: flex;
+}
+
+.home .left p {
+  color: #c6c5ce;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.home .left h1 {
+  padding-top: 2.2rem;
+  width: 70.9rem;
+
+  color: #fff;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: -1.28px;
+
+  padding-bottom: 4.4rem;
+}
+
+.home .left form {
+  width: 489px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #7a7786;
+
+  display: flex;
+  padding: 1.4rem 1.6rem 1.4rem 1.6rem;
+}
+
+.home .left form input {
+  width: 358px;
+  background: transparent;
+}
+
+.home .left form input::placeholder {
+  color: #e1e0e7;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 1rem;
+
+  display: block;
+}
+
+.home .left form button {
+  width: 133px;
+  height: 45px;
+  flex-shrink: 0;
+
+  border-radius: 5px;
+  background: #e1e0e7;
+  border: none;
+}
+
+.home .left form button:hover {
+  background: #e1e1e2;
+}
+
+.home .left .info {
+  display: flex;
+  gap: 1.8rem;
+
+  padding-top: 4.6rem;
+}
+
+.home .right {
+  position: relative;
+}
+
+.home .right img {
+  position: absolute;
+  top: -5.6rem;
+  left: -22.3rem;
+}
+
+.companies {
+  padding: 5.1rem 0;
+
+  max-width: 122.4rem;
+  height: 12.6rem;
+
+  position: relative;
+  border-radius: 10px;
+}
+
+.companies .container .logos {
+  max-width: 122.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companies button {
+  max-width: 21.6rem;
+  width: 100%;
+  height: 12.6rem;
+  flex-shrink: 0;
+  background: #4e4b59;
+
+  border: none;
+
+  cursor: pointer;
+
+  position: absolute;
+  right: -12.1rem;
+  bottom: 0;
+}
+
+.companies button img {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
