@@ -37,15 +37,26 @@ html {
 }
 
 button {
-  border: none;
+  display: flex;
+  padding: 11px 32px;
 
-  width: 100%;
-  height: 1.7rem;
+  width: 15.1rem;
+  height: 3.9rem;
 
-  max-width: 12.7rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+
+  padding: 15px 23px;
+  border-radius: 120px;
+
+  text-align: center;
 
   font-size: 14px;
-  border-radius: 12rem;
   font-weight: 500;
 }
 
@@ -96,18 +107,62 @@ header ul li a:hover {
   margin: 0 auto;
 }
 
-.actions button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 15px 23px;
-  background: #7a7786;
-
-  font-size: 14px;
-
+button {
   gap: 10px;
+
+  background: #4e4b59;
   color: #fff;
 
   white-space: nowrap;
+}
+
+.home {
+  width: 100%;
+  max-width: 1440px;
+  height: 90rem;
+
+  padding: 12.4rem;
+  background: url(../img/background.svg) no-repeat bottom center;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+}
+
+.home p {
+  text-align: center;
+  font-family: 'Mukta';
+  font-size: 18px;
+  font-weight: 400;
+
+  padding-top: 2.6rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding-top: 3.6rem;
+  padding-bottom: 12.1rem;
+}
+
+.buttons button:last-child {
+  border-radius: 120px;
+  border: 1px solid #c6c5ce;
+  background-color: transparent;
+
+  color: #7a7786;
+}
+
+.ilustration {
+  position: relative;
+}
+
+.ilustration .img-ilustra {
+  position: absolute;
+  top: 0;
 }
