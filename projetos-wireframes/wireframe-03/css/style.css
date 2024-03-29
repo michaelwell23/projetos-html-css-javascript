@@ -245,3 +245,14 @@ header a img {
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 560px) {
+}
+@media (max-width: 375px) {
+}
