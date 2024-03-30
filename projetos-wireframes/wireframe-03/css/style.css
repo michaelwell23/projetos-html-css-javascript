@@ -53,7 +53,7 @@ html {
 .container {
   width: 100%;
   max-width: 144rem;
-  padding: 0 11.2rem;
+  padding: 0 8.2rem;
   margin: 0 auto;
 }
 
@@ -247,12 +247,146 @@ header a img {
 }
 
 @media (max-width: 991px) {
+  .container {
+    padding: 0 3rem;
+  }
 }
 
 @media (max-width: 768px) {
+  header ul,
+  header a {
+    display: none;
+  }
+
+  .home {
+    padding-top: 4rem;
+    height: 99.6rem;
+  }
+
+  .home .container {
+    display: block;
+  }
+
+  .home .content-left {
+    display: block;
+
+    padding-right: 0;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home .content-left h1 {
+    max-width: 760px;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .home .content-left ul {
+    display: block;
+
+    align-items: center;
+    padding: 6rem 12rem;
+  }
+
+  .home .content-left ul li {
+    display: flex;
+
+    align-items: center;
+    margin: 0 auto;
+
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .home .content-left ul li p {
+    max-width: 48.6rem;
+  }
+
+  .home .content-right {
+    margin: 0 auto;
+  }
+
+  .brands {
+    padding-top: 16.4rem;
+  }
 }
 
 @media (max-width: 560px) {
+  .home {
+    height: 114.6rem;
+  }
+
+  .home .content-left h1 {
+    width: 48.2rem;
+  }
+
+  .brands {
+    height: 28rem;
+  }
 }
+
 @media (max-width: 375px) {
+  header .logo {
+    width: 14.6rem;
+  }
+
+  .home {
+    max-width: 37.5rem;
+    height: 111.8rem;
+  }
+
+  .home .content-left h1 {
+    max-width: 31.8rem;
+
+    font-size: 2.8rem;
+  }
+
+  .home .content-left ul {
+    padding: 3rem 0;
+  }
+
+  .home .content-right {
+    max-width: 35rem;
+  }
+
+  .home .content-right .card {
+    left: 3rem;
+  }
+
+  .home .content-right .card img {
+    width: 24rem;
+  }
+
+  .content-right .text-form {
+    padding: 17.4rem 1.6rem 2.5rem 1.6rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-right .text-form h3 {
+    font-size: 18px;
+    width: 283px;
+
+    padding-right: 1.6rem;
+
+    text-align: center;
+  }
+
+  .content-right .text-form input {
+    width: 25.9rem;
+  }
+
+  .content-right .text-form button {
+    width: 26.3rem;
+  }
+
+  .brands {
+    padding-top: 8rem;
+    height: 22.7rem;
+  }
+
+  .brands .companies img {
+    width: 6rem;
+  }
 }
