@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
 }
@@ -32,15 +37,16 @@ html {
 .container {
   width: 100%;
   max-width: 144rem;
-  padding: 0 11.2rem;
+  padding: 0 1.2rem;
   margin: 0 auto;
 }
 
 header {
   height: 10.9rem;
-  background-color: #4e4b59;
+  background: transparent;
 
-  padding: 3.2rem 0;
+  padding: 3.2rem 4rem 3.2rem 4rem;
+  background: #4e4b59;
 }
 
 header .container {
@@ -55,7 +61,7 @@ header ul {
   align-items: center;
 }
 
-header ul li {
+header ul li:not(:last-child) {
   padding-right: 5.6rem;
 }
 
@@ -85,18 +91,22 @@ header ul li button {
   background: #4e4b59;
 }
 
-.home {
-  background-color: #4e4b59;
-  height: 66.5rem;
+header .menu-mobile {
+  display: none;
+}
 
-  padding-top: 7.8rem;
+.home {
+  background: #4e4b59;
+  padding: 2.6rem 4rem 0 4rem;
 }
 
 .home .container {
   display: flex;
+
+  justify-content: space-between;
 }
 
-.home .left p {
+.content span {
   color: #c6c5ce;
   font-family: 'Open Sans';
   font-size: 16px;
@@ -104,110 +114,143 @@ header ul li button {
   line-height: 150%;
 }
 
-.home .left h1 {
-  padding-top: 2.2rem;
-  width: 70.9rem;
+.content h1 {
+  max-width: 70.9rem;
+
+  padding-top: 2.1rem;
+  padding-bottom: 4.4rem;
 
   color: #fff;
+  font-family: 'PT Sans';
   font-size: 64px;
   font-weight: 400;
   line-height: 125%;
   letter-spacing: -1.28px;
-
-  padding-bottom: 4.4rem;
 }
 
-.home .left form {
-  width: 489px;
-  height: 72px;
+.content form {
+  width: 48.9rem;
+  height: 7.2rem;
+
+  display: flex;
+
   flex-shrink: 0;
   border-radius: 7px;
   background: #7a7786;
-
-  display: flex;
-  padding: 1.4rem 1.6rem 1.4rem 1.6rem;
 }
 
-.home .left form input {
-  width: 358px;
+.content form input {
+  width: 36rem;
   background: transparent;
 }
 
-.home .left form input::placeholder {
+.content form input::placeholder {
+  padding-left: 2.3rem;
+
   color: #e1e0e7;
-  font-family: 'Open Sans';
   font-size: 16px;
   font-weight: 400;
-  padding-left: 1rem;
-
-  display: block;
 }
 
-.home .left form button {
+.content form button {
   width: 133px;
   height: 45px;
   flex-shrink: 0;
 
-  border-radius: 5px;
-  background: #e1e0e7;
-  border: none;
+  margin: 1.6rem 1.4rem 1.6rem 1.4rem;
+
+  color: #5f5c6b;
+  text-align: center;
+  justify-content: center;
+  font-family: 'PT Sans';
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.15px;
+  transition: background 0.3s ease;
 }
 
-.home .left form button:hover {
-  background: #e1e1e2;
+.content form button:hover {
+  background-color: #e1e0e7;
 }
 
-.home .left .info {
+.ilustration img {
+  max-width: 61.9rem;
+}
+
+.information {
+  padding-top: 3.6rem;
+
   display: flex;
-  gap: 1.8rem;
-
-  padding-top: 4.6rem;
+  align-items: center;
+  gap: 2.4rem;
 }
 
-.home .right {
-  position: relative;
+.information p {
+  color: #c6c5ce;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-.home .right img {
-  position: absolute;
-  top: -5.6rem;
-  left: -22.3rem;
+.enterprises {
+  max-width: 144rem;
 }
 
-.companies {
-  padding: 5.1rem 0;
-
-  max-width: 122.4rem;
-  height: 12.6rem;
-
-  position: relative;
-  border-radius: 10px;
-}
-
-.companies .container .logos {
-  max-width: 122.4rem;
+.enterprises .container {
   display: flex;
   justify-content: space-between;
 }
 
-.companies button {
-  max-width: 21.6rem;
-  width: 100%;
-  height: 12.6rem;
-  flex-shrink: 0;
-  background: #4e4b59;
-
-  border: none;
-
-  cursor: pointer;
-
-  position: absolute;
-  right: -12.1rem;
-  bottom: 0;
+.enterprises .companies {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  padding: 2rem 4rem;
 }
 
-.companies button img {
+.enterprises button {
+  position: relative;
+  left: 3.7rem;
+
+  background-color: #4e4b59;
+
+  padding: 0 10rem;
+
   display: flex;
   margin: 0 auto;
+
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 1.2rem 2rem 1.2rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+
+  header .menu-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 1rem 2rem 1rem 2rem;
+    height: 5.9rem;
+  }
+
+  header .container .logo {
+    max-width: 12rem;
+  }
 }
