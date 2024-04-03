@@ -24,7 +24,6 @@ input {
 
 html {
   max-width: 144.3rem;
-  height: 77.7rem;
   font-size: 62.5%;
   font-family: 'Fira Sans';
   color: #4e4b59;
@@ -32,7 +31,7 @@ html {
 
 .container {
   width: 100%;
-  padding: 0 11.2rem;
+  padding: 0 1.2rem;
   margin: 0 auto;
 }
 
@@ -63,10 +62,10 @@ button {
 header {
   width: 100%;
   height: 7.8rem;
-  padding: 3.1rem;
+  padding: 3.1rem 10rem;
 }
 
-header .container {
+header .container .menu-desk {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,12 +115,16 @@ button {
   white-space: nowrap;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .home {
   width: 100%;
   max-width: 1440px;
   height: 90rem;
 
-  padding: 12.4rem;
+  padding: 12.4rem 10rem 0 10rem;
   background: url(../img/background.svg) no-repeat bottom center;
 }
 
@@ -165,4 +168,117 @@ button {
 .ilustration .img-ilustra {
   position: absolute;
   top: 0;
+  right: 112px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 2.1rem 5rem;
+  }
+
+  .home {
+    height: 80rem;
+    padding: 10.4rem 8rem 0 8rem;
+  }
+
+  .buttons {
+    padding-bottom: 10rem;
+  }
+
+  .ilustration .img-ilustra {
+    right: 4.2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 2.1rem 2rem;
+  }
+
+  .home {
+    height: 80rem;
+    padding: 10.4rem 6rem 0 6rem;
+  }
+
+  .buttons {
+    padding-bottom: 8rem;
+  }
+
+  .ilustration .img-ilustra {
+    right: -4.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container .menu-desk {
+    display: none;
+  }
+
+  header .menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home {
+    height: 60rem;
+    padding: 4.4rem 6rem 0 6rem;
+  }
+
+  .buttons {
+    padding-bottom: 4rem;
+  }
+
+  .ilustration .img-ilustra {
+    width: 500px;
+
+    right: 4.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    padding: 2.1rem 4rem;
+  }
+
+  .home {
+    height: 56rem;
+    padding: 9.4rem 4rem 0 4rem;
+  }
+
+  .home h1 {
+    font-size: 3.5rem;
+  }
+
+  .home p {
+    font-size: 1.4rem;
+  }
+
+  .ilustration .img-ilustra {
+    width: 400px;
+
+    left: 2.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 2.1rem 1.5rem;
+  }
+
+  .home {
+    height: 56rem;
+    padding: 9rem 1.5rem 0 1.5rem;
+  }
+
+  .home h1 {
+    max-width: 31.9rem;
+    font-size: 2.8rem;
+  }
+
+  .ilustration .img-ilustra {
+    width: 331px;
+
+    left: -0.2rem;
+  }
 }
