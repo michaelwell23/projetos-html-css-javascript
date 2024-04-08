@@ -49,7 +49,7 @@ html {
   max-width: 144rem;
   height: 14.5rem;
 
-  padding: 5rem 8.7rem 5rem 8.7rem;
+  padding: 5rem 7.7rem 5rem 8.7rem;
 
   color: #606272;
   background: #f3f2fa;
@@ -78,6 +78,8 @@ html {
 
 .home {
   background: #f3f2fa;
+  width: 100%;
+  height: 90rem;
 }
 
 .home .container {
@@ -112,7 +114,7 @@ html {
 }
 
 .home {
-  padding: 6.4rem 8.7rem 0 8.7rem;
+  padding: 6.4rem 7.7rem 0 8.7rem;
   position: relative;
   z-index: 1;
 }
@@ -144,16 +146,16 @@ html {
   z-index: 20;
 }
 
-/* .text h1::after {
+.text h1::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 12.9rem;
+  bottom: 16.9rem;
   width: 75%;
   height: 4px;
   background-color: #f7b40d;
   z-index: -1;
-} */
+}
 
 .text p {
   max-width: 53.2rem;
@@ -251,4 +253,68 @@ form button {
 }
 
 .ilustra img {
+  max-width: 52rem;
+}
+
+.classroom-info {
+  width: 100%;
+  max-width: 144rem;
+  height: 21.6rem;
+
+  background-color: #fdfdfd;
+
+  padding: 0 8.7rem;
+}
+
+.classroom-info .container {
+  position: relative;
+}
+
+.classroom-info .cards-content {
+  width: 100%;
+  max-width: 121.6rem;
+  height: 21.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  top: -107px;
+  right: 0;
+
+  gap: 3.2rem;
+
+  z-index: 10;
+}
+
+.cards-content .card {
+  padding: 4rem 4rem;
+
+  width: 100%;
+  max-width: 39rem;
+  height: 21.6rem;
+
+  background-color: #fdfdfd;
+  border-radius: 12px;
+
+  box-shadow: 0px 24px 44px -11px #b5b7c04d;
+}
+
+.card .text-card {
+  padding-top: 3rem;
+}
+
+.card .text-card h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 33px;
+}
+
+.card .text-card p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 25.6px;
+  color: #606272;
 }
