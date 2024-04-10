@@ -1,0 +1,127 @@
+.hero {
+  padding: 3rem 8.4rem;
+
+  width: 100%;
+  max-width: 144rem;
+  height: 124.9rem;
+
+  background: url(../img/cloud-1.svg) no-repeat center bottom;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .text-content {
+      width: 100%;
+      max-width: 55.8rem;
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        background-image: linear-gradient(38deg, #0194ff 10.9%, #01eada 38.55%);
+
+        padding-bottom: 2rem;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h1 {
+        padding-bottom: 2rem;
+      }
+
+      p {
+        max-width: 48.9rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 150%;
+
+        opacity: 0.7;
+      }
+    }
+
+    .briefing {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-top: 8rem;
+      gap: 1.2rem;
+
+      button {
+        width: 22rem;
+        height: 6rem;
+        border-radius: 4px;
+        background-color: #ffffff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 1.2rem;
+
+        gap: 2px;
+
+        color: #27272d;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 150%;
+
+        img {
+          width: 30px;
+          align-items: center;
+        }
+      }
+    }
+
+    .enjoy {
+      padding-left: 3rem;
+    }
+  }
+
+  .ilustra-content {
+    position: relative;
+
+    .date {
+      position: absolute;
+      top: 29rem;
+      right: 2.1rem;
+
+      color: #fff;
+      text-align: right;
+
+      font-family: 'Archivo';
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 120%;
+    }
+
+    .telegran-group {
+      position: absolute;
+      top: 36.2rem;
+      right: 0;
+
+      width: 19.4rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+
+      img {
+        width: 2rem;
+        margin-left: auto;
+      }
+
+      p {
+        text-align: right;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+      }
+    }
+  }
+}
