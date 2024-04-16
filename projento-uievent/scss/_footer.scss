@@ -1,0 +1,23 @@
+footer {
+  max-width: 144rem;
+  height: 45.3rem;
+
+  background: url(../img/clouds-footer.png) no-repeat center center;
+
+  position: relative;
+
+  span {
+    color: #737380;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+
+    position: absolute;
+    bottom: 2.4rem;
+    right: 43%;
+
+    display: flex;
+    align-items: end;
+    gap: 1.2rem;
+  }
+}

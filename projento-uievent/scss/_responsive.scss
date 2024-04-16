@@ -1,0 +1,47 @@
+@include responsive(1200px) {
+  .challenge {
+    .container {
+      .content {
+        gap: 3.2rem;
+
+        .card {
+          img {
+            width: 5.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .informative {
+    padding-top: 4.7rem;
+
+    .container {
+      .awards {
+        .content {
+          max-width: 19.8rem;
+          gap: 3.1rem;
+
+          .card {
+            p {
+              font-size: 1.6rem;
+              padding-top: 1.2rem;
+            }
+          }
+        }
+      }
+      .how-to-participe {
+        .reasons {
+          .check {
+            p {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive(991px) {
+}
