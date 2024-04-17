@@ -44,4 +44,146 @@
 }
 
 @include responsive(991px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+
+  .hero {
+    padding: 4rem 3rem 0 3rem;
+
+    .container {
+      .briefing {
+        padding-top: 5rem;
+        justify-content: flex-start;
+
+        button {
+          width: 18rem;
+          height: 4rem;
+        }
+
+        img.gradient-img {
+          width: 25rem;
+        }
+      }
+
+      .ilustra-content {
+        h3 {
+          font-size: 1.8rem;
+          top: 19rem;
+          right: 1.1rem;
+        }
+
+        .telegran-group {
+          top: 26.2rem;
+        }
+      }
+    }
+  }
+
+  .challenge {
+    padding: 2rem 3rem 0 3rem;
+
+    .container {
+      .content {
+        .card {
+          h4 {
+            padding-top: 2rem;
+          }
+
+          p {
+            font-size: 1.4rem;
+            padding-top: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .informative {
+    padding: 2rem 3rem 0 3rem;
+
+    .container {
+      .awards {
+        padding: 6.4rem 3.4rem 0;
+
+        .content {
+          max-width: 17.8rem;
+          gap: 3.1rem;
+
+          .card {
+            img {
+              width: 3.4rem;
+            }
+
+            p {
+              font-size: 1.2rem;
+              padding-top: 1.2rem;
+            }
+          }
+        }
+      }
+      .how-to-participe {
+        max-width: 85.2rem;
+        p {
+          width: 82.4rem;
+          font-size: 1.6rem;
+          padding-bottom: 4.3rem;
+        }
+
+        .reasons {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .check {
+            width: 45rem;
+            height: 4rem;
+
+            p {
+              width: 100%;
+              max-width: 78.9rem;
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .other-resources {
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    .container {
+      .info {
+        .assessment,
+        .contest {
+          h2 {
+            font-size: 3rem;
+          }
+
+          p {
+            width: 37.7rem;
+            font-size: 1.4rem;
+          }
+        }
+        .contest {
+          .date {
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+      .links {
+        justify-content: space-between;
+      }
+      .companies {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@include responsive(768px) {
 }
