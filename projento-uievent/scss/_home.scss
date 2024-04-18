@@ -380,6 +380,16 @@
       }
 
       .contest {
+        p {
+          span {
+            color: #5935ff;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+          }
+        }
+
         .date {
           display: flex;
           gap: 1.6rem;
