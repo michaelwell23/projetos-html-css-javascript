@@ -93,6 +93,10 @@
   .ilustra-content {
     position: relative;
 
+    .ilustra-mobile {
+      display: none;
+    }
+
     .date {
       position: absolute;
       top: 29rem;

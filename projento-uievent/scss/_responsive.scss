@@ -380,5 +380,145 @@
   }
 }
 
-// @include responsive(375px) {
-// }
+@include responsive(375px) {
+  .header {
+    .container {
+      img {
+        width: 13rem;
+      }
+
+      .menu-mobile {
+        width: 3rem;
+      }
+
+      div {
+        display: none;
+      }
+    }
+  }
+
+  .hero {
+    height: 168rem;
+
+    .container {
+      .text-content {
+        h1 {
+          max-width: 33.7rem;
+          font-size: 3.5rem;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+      }
+
+      .ilustra-content {
+        .ilustra {
+          display: none;
+        }
+
+        .ilustra-mobile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 7.6rem;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          right: 10.1rem;
+          top: 54.6rem;
+        }
+
+        .telegran-group {
+          top: 58.2rem;
+          right: 7.2rem;
+
+          img {
+            margin: 0 auto;
+            align-items: center;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .informative {
+    padding: 10rem 0 0 0;
+
+    .container {
+      .awards {
+        height: 121.8rem;
+
+        h2 {
+          max-width: 24.8rem;
+          font-size: 2.4rem;
+        }
+        .content {
+          grid-template-columns: 1fr;
+        }
+      }
+      .how-to-participe {
+        max-width: 29.2rem;
+        height: 60.4rem;
+
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          max-width: 21.5rem;
+          font-size: 1.6rem;
+        }
+
+        .reasons {
+          gap: 3.2rem;
+          .check {
+            max-width: 24.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .other-resources {
+    .container {
+      .info {
+        .assessment,
+        .contest {
+          p {
+            max-width: 33.7rem;
+          }
+        }
+      }
+      .links {
+        a {
+          text-align: center;
+        }
+      }
+
+      .companies {
+        gap: 5.2rem;
+        .organization {
+          .organizing-companies {
+            flex-direction: column;
+          }
+        }
+
+        .support {
+          .supporting-compaines {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    span {
+      bottom: 5.4rem;
+      right: 28%;
+    }
+  }
+}
